@@ -188,6 +188,36 @@ a { color: inherit; text-decoration: none; }
 .cta-wa__text strong { font-size: 14px; color: #fff; }
 .cta-wa__arrow { margin-left: auto; font-size: 19px; }
 
+/* ---------- Localização da loja ---------- */
+.loc-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 15px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: transform .15s ease, border-color .15s ease;
+}
+.loc-card:hover { transform: translateY(-2px); border-color: var(--accent-2); }
+.loc-card__icon {
+  width: 30px; height: 30px; flex-shrink: 0;
+  border-radius: 9px;
+  border: 1px solid var(--accent);
+  display: flex; align-items: center; justify-content: center;
+}
+.loc-card__icon svg { width: 16px; height: 16px; color: var(--accent); }
+.loc-card__body { flex: 1; display: flex; flex-direction: column; }
+.loc-card__title { font-size: 14px; font-weight: 700; color: var(--text); }
+.loc-card__addr { font-size: 12.5px; color: var(--text-mute); margin-top: 1px; }
+.loc-card__cta {
+  margin-top: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .6px;
+  color: var(--accent);
+}
+
 /* ---------- Rótulo de seção ---------- */
 .section-label {
   font-size: 12px;
